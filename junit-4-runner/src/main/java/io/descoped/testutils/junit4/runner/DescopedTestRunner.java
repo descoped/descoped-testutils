@@ -27,7 +27,7 @@ public class DescopedTestRunner extends BlockJUnit4ClassRunner {
 
     public DescopedTestRunner(Class<?> testClass) throws InitializationError {
         super(testClass);
-        LogbackBridgeHandler.installJavaUtilLoggerBridgeHandler(Level.INFO);
+        LogbackBridgeHandler.installJavaUtilLoggerBridgeHandler(Level.CONFIG);
         factory = DefaultInstanceFactory.get(SpiInstanceFactory.class);
         container = new DescopedContainer<>(factory);
     }
