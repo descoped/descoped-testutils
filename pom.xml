@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.descoped</groupId>
+        <artifactId>parent</artifactId>
+        <version>3</version>
+    </parent>
+
+    <groupId>io.descoped.test</groupId>
+    <artifactId>descoped-tesutils</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Descoped TestUtils</name>
+    <url>http://www.descoped.io</url>
+
+    <developers>
+        <developer>
+            <id>oranheim</id>
+            <name>Ove Ranheim</name>
+            <email>oranheim@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <organization>Descoped</organization>
+            <organizationUrl>http://www.descoped.io/</organizationUrl>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>descoped</id>
+            <name>Descoped Releases</name>
+            <url>https://repository.musific.com/nexus/content/repositories/descoped/</url>
+        </repository>
+        <snapshotRepository>
+            <id>descoped-snapshots</id>
+            <name>Descoped Snapshots</name>
+            <url>https://repository.musific.com/nexus/content/repositories/descoped-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/descoped/descoped-testutils.git</connection>
+        <developerConnection>scm:git:git@github.com:descoped/descoped-testutils.git</developerConnection>
+        <url>http://www.descoped.io</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+
+        <descoped.container.version>1.0.2</descoped.container.version>
+        <descoped.devmode.plugin.version>1.0.0-alpha3</descoped.devmode.plugin.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>musific-public-repository-group</id>
+            <name>Musific Public Maven Repository Group</name>
+            <url>https://repository.musific.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>musific-public-repository</id>
+            <name>Musific Public Maven Repository Group</name>
+            <url>http://musific.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
