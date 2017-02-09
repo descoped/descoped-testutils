@@ -9,11 +9,11 @@
     </parent>
 
     <groupId>io.descoped.test</groupId>
-    <artifactId>descoped-tesutils</artifactId>
+    <artifactId>descoped-testutils-project</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>Descoped TestUtils</name>
+    <name>Descoped TestUtils Project</name>
     <url>http://www.descoped.io</url>
 
     <developers>
@@ -89,5 +89,10 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <modules>
+        <module>junit-4-runner</module>
+        <module>testutils-tests</module>
+    </modules>
 
 </project>
