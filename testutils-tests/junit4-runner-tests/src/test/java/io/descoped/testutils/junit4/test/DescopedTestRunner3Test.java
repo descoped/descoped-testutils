@@ -6,6 +6,10 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
+
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by oranheim on 09/02/2017.
  */
@@ -13,6 +17,14 @@ import org.slf4j.LoggerFactory;
 public class DescopedTestRunner3Test {
 
     private static Logger log = LoggerFactory.getLogger(DescopedTestRunner3Test.class);
+
+    @Inject
+    MyBean myBean;
+
+    @Test
+    public void testInjectField() {
+        assertEquals("bar", myBean.getFoo());
+    }
 
     @Test
     public void testG() throws Exception {
