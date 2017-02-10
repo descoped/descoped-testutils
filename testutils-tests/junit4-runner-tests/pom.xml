@@ -29,8 +29,6 @@
         <dependency>
             <groupId>io.descoped.cdi</groupId>
             <artifactId>descoped-cdi-container</artifactId>
-            <version>${descoped.container.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>

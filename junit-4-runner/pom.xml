@@ -40,7 +40,6 @@
         <dependency>
             <groupId>io.descoped</groupId>
             <artifactId>descoped-container</artifactId>
-            <version>${descoped.container.version}</version>
             <scope>provided</scope>
         </dependency>
 

@@ -56,6 +56,7 @@ public class DescopedTestRunner extends BlockJUnit4ClassRunner {
     @Override
     protected Object createTest() throws Exception {
         Object instance = super.createTest();
+        log.trace("Created TestCase: {}", instance);
         injectFieldsForTestClassIfDeltaSpikeBeanProviderIsPresent(instance);
         return instance;
     }
@@ -71,6 +72,7 @@ public class DescopedTestRunner extends BlockJUnit4ClassRunner {
     @Override
     public void run(RunNotifier notifier) {
         try {
+            log.trace("-----> run: {}", notifier);
             startSpiContainer();
             super.run(notifier);
         } finally {
