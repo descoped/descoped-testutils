@@ -32,12 +32,12 @@
         <repository>
             <id>descoped</id>
             <name>Descoped Releases</name>
-            <url>https://repository.musific.com/nexus/content/repositories/descoped/</url>
+            <url>https://repository.descoped.io/repository/descoped/</url>
         </repository>
         <snapshotRepository>
             <id>descoped-snapshots</id>
             <name>Descoped Snapshots</name>
-            <url>https://repository.musific.com/nexus/content/repositories/descoped-snapshots/</url>
+            <url>https://repository.descoped.io/repository/descoped-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
