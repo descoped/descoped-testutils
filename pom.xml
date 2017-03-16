@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.descoped</groupId>
         <artifactId>parent</artifactId>
-        <version>3</version>
+        <version>5</version>
     </parent>
 
     <groupId>io.descoped.test</groupId>
@@ -50,9 +50,9 @@
 
     <repositories>
         <repository>
-            <id>musific-public-repository-group</id>
-            <name>Musific Public Maven Repository Group</name>
-            <url>https://repository.musific.com/nexus/content/groups/public/</url>
+            <id>descoped</id>
+            <name>Descoped Public Maven Repository Group</name>
+            <url>https://repository.descoped.io/repository/descoped/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -66,9 +66,9 @@
 
     <pluginRepositories>
         <pluginRepository>
-            <id>musific-public-repository</id>
-            <name>Musific Public Maven Repository Group</name>
-            <url>http://musific.com/nexus/content/groups/public/</url>
+            <id>descoped-snapshots</id>
+            <name>Descoped Public Maven Repository Group</name>
+            <url>https://repository.descoped.io/repository/descoped-snapshots/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -85,8 +85,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.javadoc.skip>true</maven.javadoc.skip>
 
-        <descoped.container.version>1.0.3</descoped.container.version>
-        <descoped.devmode.plugin.version>1.0.0-alpha3</descoped.devmode.plugin.version>
+        <descoped.container.version>1.0.5</descoped.container.version>
+        <descoped.devmode.plugin.version>1.0.0-alpha5</descoped.devmode.plugin.version>
     </properties>
 
     <dependencyManagement>
