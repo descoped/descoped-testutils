@@ -10,7 +10,7 @@
     <groupId>io.descoped.test</groupId>
     <artifactId>descoped-testutils-project</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <name>Descoped TestUtils Project</name>
     <url>http://www.descoped.io</url>
@@ -45,7 +45,7 @@
         <connection>scm:git:git://github.com/descoped/descoped-testutils.git</connection>
         <developerConnection>scm:git:git@github.com:descoped/descoped-testutils.git</developerConnection>
         <url>http://www.descoped.io</url>
-        <tag>v1.0.4.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <repositories>
