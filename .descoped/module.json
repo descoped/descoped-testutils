@@ -1,0 +1,19 @@
+{
+  "name": "TestUtils",
+  "pages": [
+    {
+      "group": "default",
+      "uri": "README.md"
+    }
+  ],
+  "sub-modules": [
+    {
+      "id": "junit-4-runner",
+      "name": "JUnit4 Runner",
+    },
+    {
+      "id": "testutils-tests",
+      "name": "TestUtils Tests",
+    }
+  ]
+}
