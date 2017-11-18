@@ -9,11 +9,11 @@
   "sub-modules": [
     {
       "id": "junit-4-runner",
-      "name": "JUnit4 Runner",
+      "name": "JUnit4 Runner"
     },
     {
       "id": "testutils-tests",
-      "name": "TestUtils Tests",
+      "name": "TestUtils Tests"
     }
   ]
 }
